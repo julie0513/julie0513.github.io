@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <style>
+    header nav>ul {
+      list-style: none;
+    }
+
+    header nav>ul li {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.5rem;
+      float: left;
+      margin: 0 0.75rem;
+    }
+
+    header nav>ul li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    header nav>ul li a:hover {
+      color: goldenrod
+    }
+
+    header .icons svg {
+      margin: 0 5px;
+    }
+
+    .container img {
+      max-width: 100%;
+    }
+
+    .customer-reply img {
+      border-radius: 50%;
+    }
+
+    .customer-reply .text-justify {
+      text-align: justify;
+    }
+  </style>
+  <title>Bootstrap</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 導覽列 -->
+    <header class="row align-items-center p-3">
+      <div class="col-2">
+        <img src="https://via.placeholder.com/150x75/F00056/000000/?text=MyLOGO" alt="Logo">
+      </div>
+      <nav class="col-8">
+        <ul class="d-flex justify-content-end px-3">
+          <li><a href="#Home" class="text-primary">Home</a></li>
+          <li><a href="#Category">Category</a></li>
+          <li><a href="#Article">Article</a></li>
+          <li><a href="#Shop">Shop</a></li>
+        </ul>
+      </nav>
+      <div class="col-2 d-flex justify-content-end icons">
+        <i data-feather="facebook"></i>
+        <i data-feather="twitter"></i>
+        <i data-feather="instagram"></i>
+      </div>
+    </header>
+
+    <!-- 廣告橫幅 -->
+    <img src="https://via.placeholder.com/1280x720/000000/FFFFFF?text=Banner" alt="Logo">
+
+    <!-- 三欄式廣告 -->
+    <div class="row mt-5">
+      <div class="col text-center">
+        <img src="https://via.placeholder.com/1280x720/01814A/FFFFFF?text=Item 01" alt="Logo">
+        <a data-bs-toggle="collapse" href="#detail">
+          <button class="my-4 btn btn-lg btn-outline-success">Show more</button>
+        </a>
+        <p class="fw-bold">
+          Short introduce Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+      </div>
+      <div class="col text-center">
+        <img src="https://via.placeholder.com/1280x720/EAC100/FFFFFF?text=Item 02" alt="Logo">
+        <a data-bs-toggle="collapse" href="#detail">
+          <button class="my-4 btn btn-lg btn-outline-warning">Show more</button>
+        </a>
+        <p class="fw-bold">
+          Short introduce Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+      </div>
+      <div class="col text-center">
+        <img src="https://via.placeholder.com/1280x720/0066CC/FFFFFF?text=Item 03" alt="Logo">
+        <a data-bs-toggle="collapse" href="#detail">
+          <button class="my-4 btn btn-lg btn-outline-primary">Show more</button>
+        </a>
+        <p class="fw-bold">
+          Short introduce Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+      </div>
+    </div>
+    <div class="collapse" id="detail">
+      <div class="card card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book.
+      </div>
+    </div>
+
+    <!-- 顧客回饋 -->
+    <section class="customer-reply">
+      <div class="d-flex flex-row mt-5 align-items-center">
+        <img class="mx-lg-5" src="https://via.placeholder.com/150x150/820041/FFFFFF?text=Avatar 1" alt="Customer-avatar">
+        <article>
+          <h3 class="text-info fw-bold">This is my website</h3>
+          <p class="text-justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of Lorem Ipsum.
+          </p>
+        </article>
+      </div>
+
+      <div class="d-flex flex-row-reverse mt-5 align-items-center">
+        <img class="mx-lg-5" src="https://via.placeholder.com/150x150/D200D2/FFFFFF?text=Avatar 2" alt="Customer-avatar">
+        <article class="flex-grow-1 px-5">
+          <h3 class="text-danger fw-bold">Base on "Bootstrap 5"</h3>
+          <p class="text-justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of Lorem Ipsum.
+          </p>
+        </article>
+      </div>
+
+      <div class="d-flex flex-row mt-5 align-items-center">
+        <img class="mx-lg-5" src="https://via.placeholder.com/150x150/D3A4FF/FFFFFF?text=Avatar 3" alt="Customer-avatar">
+        <article>
+          <h3 class="text-primary fw-bold">It use some components</h3>
+          <p class="text-justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of Lorem Ipsum.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="d-flex justify-content-end bg-dark text-white px-5 py-2 mt-5">
+      copyright &copy; 2022
+    </footer>
+</body>
+<script>
+  feather.replace();
+</script>
+
+</html>

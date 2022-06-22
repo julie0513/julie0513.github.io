@@ -1,0 +1,76 @@
+#root {
+  font-family: "微軟正黑體";
+  width: 1000px;
+}
+
+header,
+nav,
+article,
+aside,
+footer {
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #6b9c9c;
+  color: white;
+  margin: 0.5rem;
+  font-size: 1.3em;
+}
+
+header {
+  padding: 1rem 2rem;
+}
+
+article,
+aside {
+  float: left;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav > ul > li {
+  margin-right: 3rem;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  ;
+}
+
+.link:hover {
+  color: red;
+}
+
+article {
+  width: 600px;
+  padding: 1rem 2rem;
+}
+
+section {
+  border-radius: 20px;
+  background-color: #517474;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+aside {
+  width: 280px;
+  text-align: center;
+  height: 100%;
+}
+
+aside>section {
+  width: 280px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
