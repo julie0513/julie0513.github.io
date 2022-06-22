@@ -1,0 +1,130 @@
+* {
+  font-family: 'Segoe UI', '微軟正黑體', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.full {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Slogan Style */
+
+.slogan {
+  background: linear-gradient(to bottom, #e66465 1%, goldenrod);
+}
+
+.slogan .title {
+  font-size: 200px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.3;
+  }
+}
+
+.mask {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: fade 3s ease-in-out 0s infinite alternate none;
+}
+
+img#symbol {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan .title {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slogan .title {
+    font-size: 100px;
+  }
+}
+
+/* second */
+.radiation {
+  background: linear-gradient(to bottom, goldenrod, #97CBFF);
+}
+
+.radiation .title {
+  font-size: 40px;
+}
+
+.radiation .title .strong {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .radiation .title {
+    font-size: 20px;
+  }
+
+}
+
+.preamble {
+  width: 50%;
+  max-width: 600px;
+  min-width: 300px;
+  font-weight: bolder;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 1280px) {
+  .article-area {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .article-area img {
+    max-width: 80%;
+  }
+
+  .article-area article {
+    width: 70%;
+    min-width: 300px;
+  }
+
+}
+
+.final {
+  background: linear-gradient(to bottom, #97CBFF, #006030);
+  --bs-gutter-x: 0rem;
+}
+
+.final .ending-slogan {
+  width: 50%;
+  min-width: 300px;
+  border: 3px solid white;
+  padding: 2rem;
+}
+
+.final .point {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-radius: 30px;
+  width: 300px;
+}
+
+.final .point svg {
+  color: #dc3545;
+  width: 200px;
+  height: 200px;
+}
+
+.final .card {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 270px;
+}
